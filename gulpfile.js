@@ -20,7 +20,6 @@ gulp.task('sassToCSS', function(){
     //outputStyle: 'compressed'
   }))
   .on('error',console.error.bind(console))
-  .pipe(rename('style.min.css')) //{suffix:'.min'}
   .pipe(gulp.dest('public/css/'))
 });
 

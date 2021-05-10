@@ -1,10 +1,9 @@
-//Рассширение
-%block {
-  padding: 20px;
-  background: silver;
+%container {
+  width: 80%;
+  padding: 0 10%;
 }
 
-%btn {
-  border-radius: 5px;
-  border: 1px solid #333;
+%flexDisplay {
+  display: flex;
+  justify-content: space-between;
 }
