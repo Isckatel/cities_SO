@@ -1,0 +1,30 @@
+@mixin font($size: 14px, $fontWeight:bold) {
+  font-size: $size;
+  color:$color-text;
+  font-weight:$fontWeight;
+  font-family: 'Times', sans-serif;
+}
+
+@mixin padd($padd...) {
+  padding: $padd;
+}
+
+@mixin blocks($blocks) {
+  float: left;
+  padding: 20px;
+  margin:20px;
+  height: 50px;
+  border: 1px solid red;
+
+  @if($blocks > 5) {
+    width:100%;
+  }
+  @elseif ($blocks == 5){
+    width:30px;
+  }
+  @else {
+    width: 50px;
+  }
+
+  @content;
+}
