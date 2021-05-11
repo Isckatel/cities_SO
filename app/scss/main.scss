@@ -81,20 +81,8 @@ header {
   h2 {
     font-size: 36px;
     font-weight: 900;
-    color: #000;
     text-transform: uppercase;
-    position: relative;
-
-    &::before {
-      content: "";
-      display: inline-block;
-      width: 30px;
-      height: 3px;
-      background: $mainColor;
-      position: absolute;
-      bottom:3px;
-      left: 0px;
-    }
+    @extend %heading-with-line;
   }
 
   .intro-text {
@@ -190,23 +178,7 @@ footer {
       }
 
       .social {
-        margin-top: 20px;
-        i {
-          width: 30px;
-          height: 30px;
-          border-radius: 50%;
-          background: #eee;
-          text-align: center;
-          line-height: 30px; //выровнять по вертикале с помощью этого
-          margin-right: 5 px;
-          color:#000;
-          font-size: 14px;
-          cursor: pointer;
-
-          &:hover {
-            color: $mainColor;
-          }
-        }
+        @extend %social-block;
       }
 
       .links {
