@@ -104,7 +104,19 @@ header {
 
         &.big-size {height: 500px;}
         &.medium-size {height: 400px;}
+
       }
+
+      p {
+        height: 120px;
+        overflow-y: hidden;
+
+        &:hover {
+          overflow-y: auto;
+        }
+      }
+
+
       .tag {
         text-transform: uppercase;
         font-weight: bold;
