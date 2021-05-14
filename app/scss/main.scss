@@ -104,7 +104,21 @@ header {
 
         &.big-size {height: 500px;}
         &.medium-size {height: 400px;}
-
+        &.img1 {
+          background: url("../img/nevyanskaya-naklonnaya-bashnya.jpg");
+          background-position: center center;
+          background-size: cover;
+        }
+        &.img2 {
+          background: url("../img/nizhnesinyachihinskij-muzej-zapovednik.jpg");
+          background-position: left center;
+          background-size: cover;
+        }
+        &.img3 {
+          background: url("../img/verhoture.jpg");
+          background-position: center center;
+          background-size: cover;
+        }
       }
 
       p {
